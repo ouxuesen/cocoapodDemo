@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
 
 
   s.description  = <<-DESC
+大
                    DESC
 
   s.homepage     = "https://github.com/ouxuesen"
@@ -24,7 +25,7 @@ Pod::Spec.new do |s|
 
 
 
-  s.source_files  = "cocoapodDemo/*.{h,m}"
+  s.source_files  = "cocoapodDemo/*”
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -50,8 +51,8 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-   s.framework  = "QuartzCore/QuartzCore.h"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  #s.framework  = "UIKit/UIKit.h"
+  s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
